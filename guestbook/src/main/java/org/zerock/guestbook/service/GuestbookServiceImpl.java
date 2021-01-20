@@ -31,7 +31,7 @@ public class GuestbookServiceImpl implements GuestbookService{
 
         repository.save(entity);
 
-        return null;
+        return entity.getGno();
     }
 
     @Override
