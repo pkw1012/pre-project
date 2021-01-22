@@ -62,7 +62,7 @@ public class GuestbookController {
 
         service.remove(gno);
 
-        redirectAttributes.addFlashAttribute("msg", gno);
+        redirectAttributes.addFlashAttribute("msg", -1);
 
         return "redirect:/guestbook/list";
     }
